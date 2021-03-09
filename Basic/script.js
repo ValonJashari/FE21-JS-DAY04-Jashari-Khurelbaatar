@@ -1,37 +1,30 @@
-var a = document.getElementById("firstname");
-var b = document.getElementById("lastname")
-var c = document.getElementById("age")
+var d = document.getElementById("select").value;
+console.log(d);
+document.getElementById("demo1").addEventListener("click", myfunction)
+function myfunction() 
+{   
+    
+    var e =document.getElementById("firstname");
+   
+    
+    var t =document.getElementById("lastname");
 
-if (a > 5){
-    a.style.color=a+"green";
-    //a.style.color = "green";
+    var z =document.getElementById("age");
+    var dname = document.getElementById("display");
+    
+    if (e.value.length < 5){
+        dname.style.color="red";
+        
+    }
+    else  {
+        dname.style.color = "green";
+       
+    }
+    var fullname = e.value + " "+t.value +" " +z.value;
+    document.getElementById("display").innerText=fullname;
+    
 }
-else {
-   a.style.color = "red";
-}
-document.getElementById("fname")
 
-//Exercise 2
-var d = document.getElementById("select");
 
-for(let i=0; i<d.length;i++)
-{
-    if(d[i] == "IT")
-    {
-        d.style.backgroundColor=+"purple";
-    }
-    else if(d[i] == "Hospitality")
-    {
-        d.style.backgroundColor=+"yellow";
-    }
-    else if(d[i] == "Managment")
-    {
-        d.style.backgroundColor=+"blue";
-    }
-    else
-    {
-        d.style.backgroundColor="gray";
-        //d.style.background=+"gray";
-    }
-}
-function profession(x){'click'}
+
+
